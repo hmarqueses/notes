@@ -1,7 +1,17 @@
 main() {
+	int ws;
 	int timespan;
 	int cycleLength;
 	int anchorDate;
 	
+	//resolve anchor date.
+	ws = getWS(user.UserFK);
+	
+	timespan = requestedDateFrom - ws.StartDate;
+	cycleLength = ws.DaysOn + ws.DaysOff;
+	cyclesNeeded = floor(timespan / cycleLength);
+	anchorDate = strtotime("+" . (cyclesNeeded * cycleLength) . " days", anchorDate);
+	
+	//
 	return 0;
 }
