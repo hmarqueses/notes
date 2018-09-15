@@ -12,6 +12,16 @@ main() {
 	cyclesNeeded = floor(timespan / cycleLength);
 	anchorDate = strtotime("+" . (cyclesNeeded * cycleLength) . " days", anchorDate);
 	
+	//plot projection
+	$currStartDate = anchorDate;
+	$currEndDate = $currStartDate + cycleLength;
+	do {
+		
+		//
+		$currStartDate = strtotime("+" , cycleLength, " days", currStartDate);
+		$currEndDate = $currStartDate + cycleLength;
+	} while($currStartDate <= ) ;
+	
 	//
 	return 0;
 }
