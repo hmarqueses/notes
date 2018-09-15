@@ -5,7 +5,7 @@ main() {
 	int anchorDate;
 	
 	//resolve anchor date.
-	ws = getWS(user.UserFK);
+	ws = getWS(user.User_FK);
 	
 	timespan = requestedDateFrom - ws.StartDate;
 	cycleLength = ws.DaysOn + ws.DaysOff;
