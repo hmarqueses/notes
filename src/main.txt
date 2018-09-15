@@ -1,3 +1,7 @@
 main() {
+	int timespan;
+	int cycleLength;
+	int anchorDate;
+	
 	return 0;
 }
