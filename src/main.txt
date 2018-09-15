@@ -1,3 +1,4 @@
+//added comment to the main function.
 main() {
 	int ws;
 	int timespan;
